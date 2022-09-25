@@ -9,7 +9,7 @@ export const Todos = (props) => {
          {/* <TodoItems todo = {props.todos[0]} />
          <TodoItems todo = {props.todos[1]} />
          <TodoItems todo = {props.todos[2]} /> */}
-          {props.todos.length===0?"No Todos to display":
+          {props.todos.length===0?"No Todos to show":
            props.todos.map((todos)=>{
                 return <TodoItems todo = {todos} key = {todos.no} onDelete = {props.onDelete}/>
           })
